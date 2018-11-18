@@ -1,3 +1,20 @@
 <script src="{{uiRootPath}}/js/site.js"></script>
 <script src="{{uiRootPath}}/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+});
+</script> 
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.min.js?config=TeX-MML-AM_HTMLorMML"></script>
