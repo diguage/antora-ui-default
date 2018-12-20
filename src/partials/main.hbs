@@ -30,5 +30,25 @@
         </div>
       </div>
     </article>
+    <article class="doc">
+<!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="diguage" ></div> 
+<script type="text/javascript">
+  var pathname = window.location.pathname;
+  var ppn = pathname.substring(1,pathname.indexOf(".html"));
+  var array = ppn.split("/");
+  var versionIndex = 1;
+  array.splice(versionIndex, 1);
+  var sourceID = array.join("/");
+  document.getElementById("SOHUCS").setAttribute("sid", sourceID);
+</script>
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cysQKdOgt'; 
+var conf = 'prod_e0ea3cce552a301b41ab033a41424e94'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+    </article>
   </main>
 </div>
